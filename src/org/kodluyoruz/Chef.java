@@ -32,7 +32,6 @@ public class Chef implements Runnable {
 
                     return;
                 }
-
                 restaurant.client.lock.lock();
                 try {
                     restaurant.order = new Order(count);
@@ -46,6 +45,4 @@ public class Chef implements Runnable {
             System.out.println("interrupted");
         }
     }
-
-
 }

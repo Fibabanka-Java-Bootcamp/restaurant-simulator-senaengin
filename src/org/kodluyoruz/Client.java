@@ -13,6 +13,7 @@ public class Client implements Runnable{
     private Restaurant restaurant;
 
     public Client(Restaurant r) {
+
         restaurant = r;
     }
 
